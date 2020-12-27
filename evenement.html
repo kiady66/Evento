@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Evento - Evènement</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/themes/Evento.min.css"/>
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body class="ui-mobile-viewport">
+<div data-role="page" class="ui-page " data-theme="b">
+
+    <div data-role="header" role="banner" class="ui-header ui-bar-inherit" role="banner">
+        <a href="acceuil.php" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left lang" key="fermer" rel="external">Fermer</a>
+        <h1 class="ui-title lang" key="event" role="heading" aria-level="1">Création Evènement</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <form>
+            <label for="nomEvent" class="lang" key="name">Nom :</label>
+            <input type="text" data-clear-btn="true" name="text-3" id="nomEvent" data-mini="true" value="">
+            <br/><label for="lieu" class="lang" key="lieu">Lieu :</label>
+            <input type="text" data-clear-btn="true" name="text-3" id="lieu" data-mini="true" value="">
+            <br/><label for="date" class="lang" key="date">Date :</label>
+            <input type="date" data-clear-btn="true" name="text-3" id="date" data-mini="true" value="">
+
+            <br/><form>
+                <div class="ui-field-contain">
+                    <label for="select-native-1" class="lang" key="genre">Genre :</label>
+                    <select name="select-native-1" id="select-native-1">
+                        <option value="1" class="lang" key="sport">Sport</option>
+                        <option value="2" class="lang" key="culturel">Culturel</option>
+                        <option value="3" class="lang" key="soiree">Soiree</option>
+                    </select>
+                </div>
+            </form>
+            <br/><form>
+                <br/><label for="bTime" class="lang" key="hdebut">Heure de début :</label>
+                <input type="time" data-clear-btn="true" name="time-1" id="bTime" value="">
+                <br/><label for="eTime" class="lang" key="hfin">Heure de fin :</label>
+                <input type="time" data-clear-btn="true" name="time-1" id="eTime" value="">
+            </form>
+            <br/><br/><a href="acceuil.php"  rel="external" class="ui-btn lang" key="valid">Valider</a>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="js/lang.js"></script>
+</body>
+</html>
