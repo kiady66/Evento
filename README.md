@@ -1,5 +1,5 @@
 # Evento
-Projet Web Personnel
+Projet Web
 
 
 Site de gestion d'évènements.
